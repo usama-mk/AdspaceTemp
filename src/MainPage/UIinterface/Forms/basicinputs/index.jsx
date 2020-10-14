@@ -33,7 +33,7 @@ export default class FormElements extends Component {
             <div className="col">
               <h3 className="page-title">Basic Inputs</h3>
               <ul className="breadcrumb">
-                <li className="breadcrumb-item"><a href="/react/template/app/index">Dashboard</a></li>
+                <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                 <li className="breadcrumb-item active">Basic Inputs</li>
               </ul>
             </div>

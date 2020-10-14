@@ -293,23 +293,23 @@ class AdminDashboard extends Component {
                   <ul className="activity-feed">
                     <li className="feed-item">
                       <div className="feed-date">Apr 13</div>
-                      <span className="feed-text"><a href="/react/template/app/profile">John Doe</a> added new product <a href="/react/template/app/ecommerce/product-details">"Smart Watch"</a></span>
+                      <span className="feed-text"><a href="/app/profile">John Doe</a> added new product <a href="/app/ecommerce/product-details">"Smart Watch"</a></span>
                     </li>
                     <li className="feed-item">
                       <div className="feed-date">Mar 21</div>
-                      <span className="feed-text"><a href="/react/template/app/profile">Justin Lee</a> requested amount of <a href="/react/template/app/ecommerce/invoice">$5,781</a></span>
+                      <span className="feed-text"><a href="/app/profile">Justin Lee</a> requested amount of <a href="/app/ecommerce/invoice">$5,781</a></span>
                     </li>
                     <li className="feed-item">
                       <div className="feed-date">Feb 2</div>
-                      <span className="feed-text">New user registered <a href="/react/template/app/profile">"Mary Wiley"</a></span>
+                      <span className="feed-text">New user registered <a href="/app/profile">"Mary Wiley"</a></span>
                     </li>
                     <li className="feed-item">
                       <div className="feed-date">Jan 27</div>
-                      <span className="feed-text"><a href="/react/template/app/profile">Robert Martin</a> gave a review for <a href="/react/template/app/ecommerce/product-details">"Dell Laptop"</a></span>
+                      <span className="feed-text"><a href="/app/profile">Robert Martin</a> gave a review for <a href="/app/ecommerce/product-details">"Dell Laptop"</a></span>
                     </li>
                     <li className="feed-item">
                       <div className="feed-date">Jan 14</div>
-                      <span className="feed-text">New customer registered <a href="/react/template/app/profile">"Tori Carter"</a></span>
+                      <span className="feed-text">New customer registered <a href="/app/profile">"Tori Carter"</a></span>
                     </li>
                   </ul>
                 </div>

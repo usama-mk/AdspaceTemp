@@ -1394,7 +1394,8 @@ button.bg-danger:hover {
 	line-height: 60px;
 }
 .header .header-left .logo img {
-    max-height: 40px;
+	max-height: 40px;
+	max-width: 220px;
     width: auto;
 }
 .header-left .logo.logo-small {

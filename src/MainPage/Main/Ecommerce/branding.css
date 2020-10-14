@@ -1,0 +1,19 @@
+.product {
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	border: 1px solid #e7e7e7;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #fff;
+	margin-bottom: 1.875rem;
+}
+.product-inner {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.product-inner img {
+	width: 100%;
+	height: auto;
+}

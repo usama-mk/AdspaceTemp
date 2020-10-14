@@ -22,8 +22,9 @@ class Sidebar extends Component {
               <a href="/app/index"><i className="fe fe-home" /> <span>Dashboard</span></a>
             </li>
             <li className="submenu">
-              <a href="#"><i className="fe fe-cart" /> <span> Ecommerce</span> <span className="menu-arrow" /></a>
+              <a href="#"><i className="fe fe-cart" /> <span> Media Planning</span> <span className="menu-arrow" /></a>
               <ul style={{display: 'none'}}>
+              <li><a className={pathname.includes('products') ?"active" :""} href="/app/ecommerce/billboards">Billboards</a></li>
                 <li><a className={pathname.includes('products') ?"active" :""} href="/app/ecommerce/products">Products</a></li>
                 <li><a className={pathname.includes('uct-details') ?"active" :""} href="/app/ecommerce/product-details">Product View</a></li>
                 <li><a className={pathname.includes('orders') ?"active" :""} href="/app/ecommerce/orders">Orders</a></li>
@@ -32,7 +33,25 @@ class Sidebar extends Component {
               </ul>
             </li>
             <li className="submenu">
-              <a href="#"><i className="fe fe-tiled" /> <span> Application</span> <span className="menu-arrow" /></a>
+              <a href="#"><i className="fe fe-tiled" /> <span> Branding </span> <span className="menu-arrow" /></a>
+              <ul style={{display: 'none'}}>
+                <li><a className={pathname.includes('chat') ?"active" :""} href="/app/application/chat">Chat</a></li>
+                <li><a className={pathname.includes('calendar') ?"active" :""} href="/app/application/calendar">Calendar</a></li>
+                <li><a className={pathname.includes('inbox') ||pathname.includes('compose')||
+                      pathname.includes('mail-view') ?"active" :""} href="/app/application/inbox">Email</a></li>
+              </ul>
+            </li>
+            <li className="submenu">
+              <a href="#"><i className="fe fe-tiled" /> <span> AdMonitoring </span> <span className="menu-arrow" /></a>
+              <ul style={{display: 'none'}}>
+                <li><a className={pathname.includes('chat') ?"active" :""} href="/app/application/chat">Chat</a></li>
+                <li><a className={pathname.includes('calendar') ?"active" :""} href="/app/application/calendar">Calendar</a></li>
+                <li><a className={pathname.includes('inbox') ||pathname.includes('compose')||
+                      pathname.includes('mail-view') ?"active" :""} href="/app/application/inbox">Email</a></li>
+              </ul>
+            </li>
+            <li className="submenu">
+              <a href="#"><i className="fe fe-tiled" /> <span> Orders </span> <span className="menu-arrow" /></a>
               <ul style={{display: 'none'}}>
                 <li><a className={pathname.includes('chat') ?"active" :""} href="/app/application/chat">Chat</a></li>
                 <li><a className={pathname.includes('calendar') ?"active" :""} href="/app/application/calendar">Calendar</a></li>

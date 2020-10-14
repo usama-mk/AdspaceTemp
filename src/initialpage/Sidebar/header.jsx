@@ -15,10 +15,10 @@ class Header extends Component {
         <div className="header">
         {/* Logo */}
         <div className="header-left">
-          <a href="/react/template/app/index" className="logo">
-            <img src={headerlogo} alt="Logo" />
+          <a href="/app/index" className="logo">
+            <img  src={headerlogo} alt="Logo" width={143.41} height={40} />
           </a>
-          <a href="/react/template/app/index" className="logo logo-small">
+          <a href="/app/index" className="logo logo-small">
             <img src={Logo_small} alt="Logo" width={30} height={30} />
           </a>
         </div>
@@ -46,9 +46,9 @@ class Header extends Component {
               <li>
                 <div className="app-list">
                   <div className="row">
-                    <div className="col"><a className={pathname.includes('inbox') ?"app-item active" :"app-item"} href="/react/template/app/application/inbox"><i className="fa fa-envelope" /><span>Email</span></a></div>
-                    <div className="col"><a className={pathname.includes('calendar') ?"app-item active" :"app-item"} href="/react/template/app/application/calendar"><i className="fa fa-calendar" /><span>Calendar</span></a></div>
-                    <div className="col"><a className={pathname.includes('chat') ?"app-item active" :"app-item"} href="/react/template/app/application/chat"><i className="fa fa-comments" /><span>Chat</span></a></div>
+                    <div className="col"><a className={pathname.includes('inbox') ?"app-item active" :"app-item"} href="/app/application/inbox"><i className="fa fa-envelope" /><span>Email</span></a></div>
+                    <div className="col"><a className={pathname.includes('calendar') ?"app-item active" :"app-item"} href="/app/application/calendar"><i className="fa fa-calendar" /><span>Calendar</span></a></div>
+                    <div className="col"><a className={pathname.includes('chat') ?"app-item active" :"app-item"} href="/app/application/chat"><i className="fa fa-comments" /><span>Chat</span></a></div>
                   </div>
                 </div>
               </li>
@@ -142,9 +142,9 @@ class Header extends Component {
                   <p className="text-muted mb-0">Administrator</p>
                 </div>
               </div>
-              <a className="dropdown-item" href="/react/template/app/profile">My Profile</a>
-              <a className="dropdown-item" href="/react/template/app/profile">Account Settings</a>
-              <a className="dropdown-item" href="/react/template/login">Logout</a>
+              <a className="dropdown-item" href="/app/profile">My Profile</a>
+              <a className="dropdown-item" href="/app/profile">Account Settings</a>
+              <a className="dropdown-item" href="/login">Logout</a>
             </div>
           </li>
           {/* /User Menu */}

@@ -17,7 +17,7 @@ class Customers extends Component {
             <div className="col">
               <h3 className="page-title">Customers</h3>
               <ul className="breadcrumb">
-                <li className="breadcrumb-item"><a href="/react/template/app/index">Dashboard</a></li>
+                <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                 <li className="breadcrumb-item active">Customers</li>
               </ul>
             </div>

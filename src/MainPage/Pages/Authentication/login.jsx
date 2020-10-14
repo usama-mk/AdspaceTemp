@@ -22,7 +22,7 @@ class Login extends Component {
                   <h1>Login</h1>
                   <p className="account-subtitle">Access to our dashboard</p>
                   {/* Form */}
-                  <form action="/react/template/app/index">
+                  <form action="/app/index">
                     <div className="form-group">
                       <input className="form-control" type="text" placeholder="Email" />
                     </div>
@@ -34,7 +34,7 @@ class Login extends Component {
                     </div>
                   </form>
                   {/* /Form */}
-                  <div className="text-center forgotpass"><a href="/react/template/forgot-password">Forgot Password?</a></div>
+                  <div className="text-center forgotpass"><a href="/forgot-password">Forgot Password?</a></div>
                   <div className="login-or">
                     <span className="or-line" />
                     <span className="span-or">or</span>
@@ -45,7 +45,7 @@ class Login extends Component {
                     <a href="#" className="facebook"><i className="fa fa-facebook" /></a><a href="#" className="google"><i className="fa fa-google" /></a>
                   </div>
                   {/* /Social Login */}
-                  <div className="text-center dont-have">Don’t have an account? <a href="/react/template/register">Register</a></div>
+                  <div className="text-center dont-have">Don’t have an account? <a href="/register">Register</a></div>
                 </div>
               </div>
             </div>

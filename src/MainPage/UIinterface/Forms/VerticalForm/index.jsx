@@ -20,7 +20,7 @@ export default class FormElements extends Component {
             <div className="col">
               <h3 className="page-title">Vertical Form</h3>
               <ul className="breadcrumb">
-                <li className="breadcrumb-item"><a href="/react/template/app/index">Dashboard</a></li>
+                <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                 <li className="breadcrumb-item active">Vertical Form</li>
               </ul>
             </div>

@@ -22,7 +22,7 @@ class Register extends Component {
                   <h1>Register</h1>
                   <p className="account-subtitle">Access to our dashboard</p>
                   {/* Form */}
-                  <form action="/react/template/login">
+                  <form action="/login">
                     <div className="form-group">
                       <input className="form-control" type="text" placeholder="Name" />
                     </div>
@@ -50,7 +50,7 @@ class Register extends Component {
                     <a href="#" className="facebook"><i className="fa fa-facebook" /></a><a href="#" className="google"><i className="fa fa-google" /></a>
                   </div>
                   {/* /Social Login */}
-                  <div className="text-center dont-have">Already have an account? <a href="/react/template/login">Login</a></div>
+                  <div className="text-center dont-have">Already have an account? <a href="/login">Login</a></div>
                 </div>
               </div>
             </div>

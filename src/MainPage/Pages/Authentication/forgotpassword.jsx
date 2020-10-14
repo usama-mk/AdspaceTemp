@@ -23,7 +23,7 @@ class Forgotpassword extends Component {
                 <h1>Forgot Password?</h1>
                 <p className="account-subtitle">Enter your email to get a password reset link</p>
                 {/* Form */}
-                <form action="/react/template/login">
+                <form action="/login">
                   <div className="form-group">
                     <input className="form-control" type="text" placeholder="Email" />
                   </div>
@@ -32,7 +32,7 @@ class Forgotpassword extends Component {
                   </div>
                 </form>
                 {/* /Form */}
-                <div className="text-center dont-have">Remember your password? <a href="/react/template/login">Login</a></div>
+                <div className="text-center dont-have">Remember your password? <a href="/login">Login</a></div>
               </div>
             </div>
           </div>

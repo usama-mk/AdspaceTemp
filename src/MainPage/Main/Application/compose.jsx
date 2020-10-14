@@ -27,7 +27,7 @@ class Compose extends Component {
               <div className="col">
                 <h3 className="page-title">Compose</h3>
                 <ul className="breadcrumb">
-                  <li className="breadcrumb-item"><a href="/react/template/app/index">Dashboard</a></li>
+                  <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                   <li className="breadcrumb-item active">Compose</li>
                 </ul>
               </div>
@@ -57,7 +57,7 @@ class Compose extends Component {
             <div className="col-lg-9 col-md-8">
               <div className="card">
                 <div className="card-body">
-                  <form action="/react/template/app/application/inbox">
+                  <form action="/app/application/inbox">
                     <div className="form-group">
                       <input type="email" placeholder="To" className="form-control" />
                     </div>

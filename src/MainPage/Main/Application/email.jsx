@@ -17,7 +17,7 @@ class Email extends Component {
               <div className="col">
                 <h3 className="page-title">Inbox</h3>
                 <ul className="breadcrumb">
-                  <li className="breadcrumb-item"><a href="/react/template/app/index">Dashboard</a></li>
+                  <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                   <li className="breadcrumb-item active">Inbox</li>
                 </ul>
               </div>
@@ -27,7 +27,7 @@ class Email extends Component {
           <div className="row">
             <div className="col-lg-3 col-md-4">
               <div className="compose-btn">
-                <a href="/react/template/app/application/compose" className="btn btn-primary btn-block">
+                <a href="/app/application/compose" className="btn btn-primary btn-block">
                   Compose
                 </a>
               </div>
@@ -134,7 +134,7 @@ class Email extends Component {
                           </tr>
                         </thead>
                         <tbody>
-                          <tr className="unread clickable-row" data-href="/react/template/app/application/mail-view">
+                          <tr className="unread clickable-row" data-href="/app/application/mail-view">
                             <td>
                               <input type="checkbox" className="checkmail" />
                             </td>
@@ -144,7 +144,7 @@ class Email extends Component {
                             <td><i className="fa fa-paperclip" /></td>
                             <td className="mail-date">13:14</td>
                           </tr>
-                          <tr className="unread clickable-row" data-href="/react/template/app/application/mail-view">
+                          <tr className="unread clickable-row" data-href="/app/application/mail-view">
                             <td>
                               <input type="checkbox" className="checkmail" />
                             </td>
@@ -154,7 +154,7 @@ class Email extends Component {
                             <td />
                             <td className="mail-date">8:42</td>
                           </tr>
-                          <tr className="clickable-row" data-href="/react/template/app/application/mail-view">
+                          <tr className="clickable-row" data-href="/app/application/mail-view">
                             <td>
                               <input type="checkbox" className="checkmail" />
                             </td>
@@ -164,7 +164,7 @@ class Email extends Component {
                             <td />
                             <td className="mail-date">30 Nov</td>
                           </tr>
-                          <tr className="unread clickable-row" data-href="/react/template/app/application/mail-view">
+                          <tr className="unread clickable-row" data-href="/app/application/mail-view">
                             <td>
                               <input type="checkbox" className="checkmail" />
                             </td>
@@ -174,7 +174,7 @@ class Email extends Component {
                             <td />
                             <td className="mail-date">18 Sep</td>
                           </tr>
-                          <tr className="clickable-row" data-href="/react/template/app/application/mail-view">
+                          <tr className="clickable-row" data-href="/app/application/mail-view">
                             <td>
                               <input type="checkbox" className="checkmail" />
                             </td>
@@ -184,7 +184,7 @@ class Email extends Component {
                             <td />
                             <td className="mail-date">21 Aug</td>
                           </tr>
-                          <tr className="clickable-row" data-href="/react/template/app/application/mail-view">
+                          <tr className="clickable-row" data-href="/app/application/mail-view">
                             <td>
                               <input type="checkbox" className="checkmail" />
                             </td>
@@ -194,7 +194,7 @@ class Email extends Component {
                             <td />
                             <td className="mail-date">1 Aug</td>
                           </tr>
-                          <tr className="unread clickable-row" data-href="/react/template/app/application/mail-view">
+                          <tr className="unread clickable-row" data-href="/app/application/mail-view">
                             <td>
                               <input type="checkbox" className="checkmail" />
                             </td>
@@ -204,7 +204,7 @@ class Email extends Component {
                             <td />
                             <td className="mail-date">Jul 13</td>
                           </tr>
-                          <tr className="clickable-row" data-href="/react/template/app/application/mail-view">
+                          <tr className="clickable-row" data-href="/app/application/mail-view">
                             <td>
                               <input type="checkbox" className="checkmail" />
                             </td>
@@ -214,7 +214,7 @@ class Email extends Component {
                             <td><i className="fa fa-paperclip" /></td>
                             <td className="mail-date">May 14</td>
                           </tr>
-                          <tr className="unread clickable-row" data-href="/react/template/app/application/mail-view">
+                          <tr className="unread clickable-row" data-href="/app/application/mail-view">
                             <td>
                               <input type="checkbox" className="checkmail" />
                             </td>
@@ -224,7 +224,7 @@ class Email extends Component {
                             <td />
                             <td className="mail-date">11/11/16</td>
                           </tr>
-                          <tr className="clickable-row" data-href="/react/template/app/application/mail-view">
+                          <tr className="clickable-row" data-href="/app/application/mail-view">
                             <td>
                               <input type="checkbox" className="checkmail" />
                             </td>

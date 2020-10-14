@@ -19,7 +19,7 @@ class MailView extends Component {
               <div className="col">
                 <h3 className="page-title">Mail View</h3>
                 <ul className="breadcrumb">
-                  <li className="breadcrumb-item"><a href="/react/template/app/index">Dashboard</a></li>
+                  <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                   <li className="breadcrumb-item active">Mail View</li>
                 </ul>
               </div>
@@ -29,7 +29,7 @@ class MailView extends Component {
           <div className="row">
             <div className="col-lg-3 col-md-4">
               <div className="compose-btn">
-                <a href="/react/template/app/application/compose" className="btn btn-primary btn-block">
+                <a href="/app/application/compose" className="btn btn-primary btn-block">
                   Compose
                 </a>
               </div>

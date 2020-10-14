@@ -4,7 +4,7 @@ const path = require('path');
 const webpack = require('webpack');
 const fs = require('fs');
 
-const publicPath = '/react/template/';
+const publicPath = '/';
 // const publicPath = '/';
 
 // Make sure any symlinks in the project folder are resolved:

@@ -19,7 +19,7 @@ class Products extends Component {
               <div className="col">
                 <h3 className="page-title">Products</h3>
                 <ul className="breadcrumb">
-                  <li className="breadcrumb-item"><a href="/react/template/app/index">Dashboard</a></li>
+                  <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                   <li className="breadcrumb-item active">Products</li>
                 </ul>
               </div>
@@ -37,7 +37,7 @@ class Products extends Component {
                   </div>
                 </div>
                 <div className="pro-desc">
-                  <h5><a href="/react/template/app/ecommerce/product-details">Apple MacBook Pro</a></h5>
+                  <h5><a href="/app/ecommerce/product-details">Apple MacBook Pro</a></h5>
                   <div className="price">$5528</div>
                 </div>
               </div>
@@ -52,7 +52,7 @@ class Products extends Component {
                   </div>
                 </div>
                 <div className="pro-desc">
-                  <h5><a href="/react/template/app/ecommerce/product-details">Samsung Galaxy S10 Plus</a></h5>
+                  <h5><a href="/app/ecommerce/product-details">Samsung Galaxy S10 Plus</a></h5>
                   <div className="price">$799</div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ class Products extends Component {
                   </div>
                 </div>
                 <div className="pro-desc">
-                  <h5><a href="/react/template/app/ecommerce/product-details">Apple iMac Pro</a></h5>
+                  <h5><a href="/app/ecommerce/product-details">Apple iMac Pro</a></h5>
                   <div className="price">$6699</div>
                 </div>
               </div>
@@ -82,7 +82,7 @@ class Products extends Component {
                   </div>
                 </div>
                 <div className="pro-desc">
-                  <h5><a href="/react/template/app/ecommerce/product-details">Fujifilm Digital Camera</a></h5>
+                  <h5><a href="/app/ecommerce/product-details">Fujifilm Digital Camera</a></h5>
                   <div className="price">$4140</div>
                 </div>
               </div>
@@ -97,7 +97,7 @@ class Products extends Component {
                   </div>
                 </div>
                 <div className="pro-desc">
-                  <h5><a href="/react/template/app/ecommerce/product-details">Apple Watch Series 4</a></h5>
+                  <h5><a href="/app/ecommerce/product-details">Apple Watch Series 4</a></h5>
                   <div className="price">$703</div>
                 </div>
               </div>
@@ -112,7 +112,7 @@ class Products extends Component {
                   </div>
                 </div>
                 <div className="pro-desc">
-                  <h5><a href="/react/template/app/ecommerce/product-details">Apple iPhone Xs Max 6.5</a></h5>
+                  <h5><a href="/app/ecommerce/product-details">Apple iPhone Xs Max 6.5</a></h5>
                   <div className="price">$1199</div>
                 </div>
               </div>
@@ -127,7 +127,7 @@ class Products extends Component {
                   </div>
                 </div>
                 <div className="pro-desc">
-                  <h5><a href="/react/template/app/ecommerce/product-details">Logitech G633</a></h5>
+                  <h5><a href="/app/ecommerce/product-details">Logitech G633</a></h5>
                   <div className="price">$303</div>
                 </div>
               </div>
@@ -142,7 +142,7 @@ class Products extends Component {
                   </div>
                 </div>
                 <div className="pro-desc">
-                  <h5><a href="/react/template/app/ecommerce/product-details">Apple Magic Keyboard</a></h5>
+                  <h5><a href="/app/ecommerce/product-details">Apple Magic Keyboard</a></h5>
                   <div className="price">$112</div>
                 </div>
               </div>

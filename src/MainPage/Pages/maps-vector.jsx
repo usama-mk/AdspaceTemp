@@ -66,7 +66,7 @@ class MapsVectorPage extends Component {
               <div className="col-sm-12">
                 <h3 className="page-title">Vector Maps</h3>
                 <ul className="breadcrumb">
-                  <li className="breadcrumb-item"><a href="/react/template/app/index">Dashboard</a></li>
+                  <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                   <li className="breadcrumb-item active">Vector Maps</li>
                 </ul>
               </div>

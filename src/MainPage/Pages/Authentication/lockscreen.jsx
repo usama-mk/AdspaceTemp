@@ -28,7 +28,7 @@ class Lockscreen extends Component {
                   <h4>Allen Davis</h4>
                 </div>
                 {/* Form */}
-                <form action="/react/template/app/index">
+                <form action="/app/index">
                   <div className="form-group">
                     <input className="form-control" type="text" placeholder="Password" />
                   </div>
@@ -37,7 +37,7 @@ class Lockscreen extends Component {
                   </div>
                 </form>
                 {/* /Form */}
-                <div className="text-center dont-have">Sign in as a different user? <a href="/react/template/login">Login</a></div>
+                <div className="text-center dont-have">Sign in as a different user? <a href="/login">Login</a></div>
               </div>
             </div>
           </div>

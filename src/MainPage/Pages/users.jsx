@@ -18,7 +18,7 @@ class Users extends Component {
               <div className="col">
                 <h3 className="page-title">Users</h3>
                 <ul className="breadcrumb">
-                  <li className="breadcrumb-item"><a href="/react/template/app/index">Dashboard</a></li>
+                  <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                   <li className="breadcrumb-item active">Users</li>
                 </ul>
               </div>
@@ -46,8 +46,8 @@ class Users extends Component {
                         <tr>
                           <td>
                             <h2 className="table-avatar">
-                              <a href="/react/template/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_03} alt="User Image" /></a>
-                              <a href="/react/template/app/profile">Justin Lee <span>#0001</span></a>
+                              <a href="/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_03} alt="User Image" /></a>
+                              <a href="/app/profile">Justin Lee <span>#0001</span></a>
                             </h2>
                           </td>
                           <td>76</td>
@@ -67,8 +67,8 @@ class Users extends Component {
                         <tr>
                           <td>
                             <h2 className="table-avatar">
-                              <a href="/react/template/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_04} alt="User Image" /></a>
-                              <a href="/react/template/app/profile">Joe Edwards <span>#0002</span></a>
+                              <a href="/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_04} alt="User Image" /></a>
+                              <a href="/app/profile">Joe Edwards <span>#0002</span></a>
                             </h2>
                           </td>
                           <td>42</td>
@@ -88,8 +88,8 @@ class Users extends Component {
                         <tr>
                           <td>
                             <h2 className="table-avatar">
-                              <a href="/react/template/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_05} alt="User Image" /></a>
-                              <a href="/react/template/app/profile">Mary Wiley <span>#0003</span></a>
+                              <a href="/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_05} alt="User Image" /></a>
+                              <a href="/app/profile">Mary Wiley <span>#0003</span></a>
                             </h2>
                           </td>
                           <td>21</td>
@@ -109,8 +109,8 @@ class Users extends Component {
                         <tr>
                           <td>
                             <h2 className="table-avatar">
-                              <a href="/react/template/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_06} alt="User Image" /></a>
-                              <a href="/react/template/app/profile">Amy Bond <span>#0004</span></a>
+                              <a href="/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_06} alt="User Image" /></a>
+                              <a href="/app/profile">Amy Bond <span>#0004</span></a>
                             </h2>
                           </td>
                           <td>112</td>
@@ -130,8 +130,8 @@ class Users extends Component {
                         <tr>
                           <td>
                             <h2 className="table-avatar">
-                              <a href="/react/template/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_07} alt="User Image" /></a>
-                              <a href="/react/template/app/profile">Clara Brady <span>#0005</span></a>
+                              <a href="/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_07} alt="User Image" /></a>
+                              <a href="/app/profile">Clara Brady <span>#0005</span></a>
                             </h2>
                           </td>
                           <td>271</td>
@@ -151,8 +151,8 @@ class Users extends Component {
                         <tr>
                           <td>
                             <h2 className="table-avatar">
-                              <a href="/react/template/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_08} alt="User Image" /></a>
-                              <a href="/react/template/app/profile">Robert Martin <span>#0006</span></a>
+                              <a href="/app/profile" className="avatar avatar-sm mr-2"><img className="avatar-img rounded-circle" src={Avatar_08} alt="User Image" /></a>
+                              <a href="/app/profile">Robert Martin <span>#0006</span></a>
                             </h2>
                           </td>
                           <td>997</td>

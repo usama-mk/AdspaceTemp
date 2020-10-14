@@ -19,7 +19,7 @@ export default class Blank extends Component {
 				  <div className="col-sm-12">
 					<h3 className="page-title">Blank Page</h3>
 					<ul className="breadcrumb">
-					  <li className="breadcrumb-item"><a href="/react/template/app/index">Dashboard</a></li>
+					  <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
 					  <li className="breadcrumb-item active">Blank Page</li>
 					</ul>
 				  </div>
