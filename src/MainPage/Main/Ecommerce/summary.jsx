@@ -6,6 +6,8 @@ import { Product_01, Product_02, Product_03, Product_04, Product_05, Product_06,
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { Button } from '@material-ui/core';
 import CollapsibleTable from './components/summaryComp';
+import './summary.css';
+// zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 
 class summary extends Component {
   constructor(){
@@ -19,7 +21,7 @@ class summary extends Component {
     return (
       <div className="page-wrapper">
         <Helmet>
-          <title>Adspace - Billboards</title>
+          <title>Adspace Summary</title>
           <meta name="description" content="Dashboard" />
         </Helmet>
         <div className="content container-fluid">
@@ -33,7 +35,8 @@ class summary extends Component {
                   <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                   <li className="breadcrumb-item active">Summary</li>
                   </div>
-                 <CollapsibleTable/>
+                 
+
                   <div>
     {/* <Button href="/app/ecommerce/summary"  variant="contained" color="primary" style={{margin:"10px", color:"white"}} >CONTINUE ${`${this.state.price?this.state.price:0}`} </Button> */}
                   </div>
@@ -43,7 +46,10 @@ class summary extends Component {
              
           </div>
           {/* /Page Content */}
-          
+         
+
+          <CollapsibleTable/>
+         
         </div>
       </div>
     );

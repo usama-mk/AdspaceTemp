@@ -1,0 +1,4 @@
+div.ex1 {
+    display: flex;
+    overflow: scroll;
+  }

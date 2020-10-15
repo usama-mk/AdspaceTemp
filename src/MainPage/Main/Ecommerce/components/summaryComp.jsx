@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Collapse from '@material-ui/core/Collapse';
@@ -32,17 +34,16 @@ const useRowStyles = makeStyles({
     },
   },
 });
-function createData(name, calories, fat, carbs, protein, price) {
+function createData(name, adspaceName, adType , price, qty) {
   return {
     name,
-    calories,
-    fat,
-    carbs,
-    protein,
+    adspaceName,
+    adType,
     price,
+    qty,
     history: [
-      { date: '2020-01-05', customerId: '11091700', amount: 3 },
-      { date: '2020-01-02', customerId: 'Anonymous', amount: 1 },
+      { date: 'Purchase Date: 2020-01-05', customerId: 'ID: 11091700', amount: `Amount: 3` },
+     
     ],
   };
 }
@@ -86,7 +87,9 @@ const useStyles = makeStyles((theme) => ({
   }
   
 function Row(props) {
-    const [selectedDate, setSelectedDate] = React.useState(new Date());
+    const [selectedDate, setSelectedDate] = React.useState(null);
+    const [selectedDate1, setSelectedDate1] = React.useState(null);
+    
 
     const handleDateChange = (date) => {
       setSelectedDate(date);
@@ -106,27 +109,115 @@ function Row(props) {
         <TableCell component="th" style={{background:'white'}} scope="row">
           {row.name}
         </TableCell>
-        <TableCell align="right">{row.calories}</TableCell>
-        <TableCell align="right">{row.fat}</TableCell>
-        <TableCell align="right">{row.carbs}</TableCell>
-        <TableCell align="right">{row.protein}</TableCell>
+        <TableCell align="right">{row.adspaceName}</TableCell>
+        <TableCell align="right">{row.adType}</TableCell>
+        <TableCell align="right">{row.price}</TableCell>
+        <TableCell align="right">{row.qty}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
-            <Box margin={1}>
+          <Box margin={1} padding={3}>
+              <Typography align="center" variant="h6" gutterBottom component="div" style={{backgroundColor:"grey", padding:"20", borderRadius:"10px"}}>
+                 History/Details
+              </Typography>
+              <Table size="small" aria-label="purchases">
+                
+                <TableBody>
+                  {row.history.map((historyRow) => (
+                    <TableRow key={historyRow.date}>
+                      <TableCell component="th" scope="row" style={{background:"white"}}>
+                        {historyRow.date}
+                      </TableCell>
+                      <TableCell>{historyRow.customerId}</TableCell>
+                      <TableCell align="right">{historyRow.amount}</TableCell>
+                      <TableCell align="right">
+                      <Button variant="contained" color="primary">
+                        Click Here to see details
+                       </Button>
+                      </TableCell>
+                      <TableCell>
+                      <Grid container justify="space-around">
+                      <div  style={{padding:"3px", background:"black" ,borderRadius: "7px"}}>
+                <DatePicker  showYearDropdown scrollableMonthYearDropdown isClearable  placeholderText="Start Date" selected={selectedDate} onChange={date=>setSelectedDate(date) } />
+                <span>  </span>
+                <DatePicker  showYearDropdown scrollableMonthYearDropdown isClearable  placeholderText="End Date" selected={selectedDate1} onChange={date=>setSelectedDate1(date) } />
+
+                 </div>
+        </Grid>
+                       
+                          <UploadButtons/>
+                      </TableCell>
+                      
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+              </Box>
+          </Collapse>
+        </TableCell>
+      </TableRow>
+    </React.Fragment>
+  );
+}
+
+Row.propTypes = {
+  row: PropTypes.shape({
+    calories: PropTypes.number.isRequired,
+    carbs: PropTypes.number.isRequired,
+    fat: PropTypes.number.isRequired,
+    history: PropTypes.arrayOf(
+      PropTypes.shape({
+        amount: PropTypes.number.isRequired,
+        customerId: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
+      }),
+    ).isRequired,
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    protein: PropTypes.number.isRequired,
+  }).isRequired,
+};
+
+const rows = [
+  createData('Img Preview', "Name", "LED BILLBOARD", "$2500", "3"),
+  createData('Img Preview', "Name", "LCD BILLBOARD", "$2500", "2"),
+  createData('Img Preview', "Name", "SOLAR BILLBOARD", "$3000", "1"),
+  createData('Img Preview', "Name", "PORTABLE BILLBOARD", "$3500", "2"),
+  createData('Img Preview', "Name", "BILLBOARD", "$2500", "5"),
+];
+
+export default function CollapsibleTable() {
+  return (
+    <TableContainer component={Paper}>
+      <Table aria-label="collapsible table">
+        <TableHead>
+          <TableRow>
+            <TableCell style={{background:"white"}}/>
+            <TableCell style={{background:"white"}}></TableCell>
+            <TableCell style={{background:"white"}} align="right">Adspace Name</TableCell>
+            <TableCell style={{background:"white"}} align="right">Adtype</TableCell>
+            <TableCell  style={{background:"white"}} align="right">Price</TableCell>
+            <TableCell style={{background:"white"}} align="right">Qty</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <Row key={row.name} row={row} style={{background:"white"}}/>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  );
+}
+
+//---------------------------------------------------
+{/* <Box margin={1} padding={50}>
               <Typography variant="h6" gutterBottom component="div">
                 History
               </Typography>
               <Table size="small" aria-label="purchases">
-                {/* <TableHead>
-                  <TableRow>
-                    <TableCell style={{background:"grey"}} >Date</TableCell>
-                    <TableCell style={{background:"grey"}}>Customer</TableCell>
-                    <TableCell style={{background:"grey"}} align="right">Amount</TableCell>
-                    <TableCell style={{background:"grey"}} align="right">Total price ($)</TableCell>
-                  </TableRow>
-                </TableHead> */}
+                
                 <TableBody>
                   {row.history.map((historyRow) => (
                     <TableRow key={historyRow.date}>
@@ -178,60 +269,4 @@ function Row(props) {
                   ))}
                 </TableBody>
               </Table>
-            </Box>
-          </Collapse>
-        </TableCell>
-      </TableRow>
-    </React.Fragment>
-  );
-}
-
-Row.propTypes = {
-  row: PropTypes.shape({
-    calories: PropTypes.number.isRequired,
-    carbs: PropTypes.number.isRequired,
-    fat: PropTypes.number.isRequired,
-    history: PropTypes.arrayOf(
-      PropTypes.shape({
-        amount: PropTypes.number.isRequired,
-        customerId: PropTypes.string.isRequired,
-        date: PropTypes.string.isRequired,
-      }),
-    ).isRequired,
-    name: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    protein: PropTypes.number.isRequired,
-  }).isRequired,
-};
-
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 3.99),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.99),
-  createData('Eclair', 262, 16.0, 24, 6.0, 3.79),
-  createData('Cupcake', 305, 3.7, 67, 4.3, 2.5),
-  createData('Gingerbread', 356, 16.0, 49, 3.9, 1.5),
-];
-
-export default function CollapsibleTable() {
-  return (
-    <TableContainer component={Paper}>
-      <Table aria-label="collapsible table">
-        <TableHead>
-          <TableRow>
-            <TableCell style={{background:"white"}}/>
-            <TableCell style={{background:"white"}}>Dessert (100g serving)</TableCell>
-            <TableCell style={{background:"white"}} align="right">Calories</TableCell>
-            <TableCell style={{background:"white"}} align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell  style={{background:"white"}} align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell style={{background:"white"}} align="right">Protein&nbsp;(g)</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <Row key={row.name} row={row} style={{background:"white"}}/>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-  );
-}
+            </Box> */}
