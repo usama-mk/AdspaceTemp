@@ -12,6 +12,13 @@
 
 
 }
+ul.breadcrumb{
+    display: flex;
+    justify-content: space-between;
+}
+div.crumb{
+    display: flex;
+}
 
 .bt-1{
     border-bottom-left-radius:50% !important;

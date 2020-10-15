@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@date-io/date-fns": "^2.10.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
@@ -14,6 +15,8 @@
     "@fullcalendar/timegrid": "^5.2.0",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/pickers": "^3.2.10",
+    "@material-ui/styles": "^4.10.0",
     "antd": "^4.5.2",
     "bootstrap": "^4.5.0",
     "config": "^3.3.2",

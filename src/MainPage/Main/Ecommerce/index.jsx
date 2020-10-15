@@ -11,6 +11,7 @@ import Invoice from './invoice';
 import Orders from './order';
 import Products from './products';
 import ProductView from './productview';
+import summary from './summary';
 
 const DashboardRoute = ({ match }) => (
    <Switch>
@@ -19,6 +20,7 @@ const DashboardRoute = ({ match }) => (
       <Route path={`${match.url}/billboards`} component={Billboards} /> 
       <Route path={`${match.url}/branding`} component={branding} />
       <Route path={`${match.url}/products`} component={Products} />
+      <Route path={`${match.url}/summary`} component={summary} />
       <Route path={`${match.url}/invoice`} component={Invoice} />
       <Route path={`${match.url}/orders`} component={Orders} />
       <Route path={`${match.url}/product-details`} component={ProductView} />

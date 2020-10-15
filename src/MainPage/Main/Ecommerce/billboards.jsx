@@ -4,8 +4,16 @@ import { Helmet } from "react-helmet";
 import './billboards.css'
 import { Product_01, Product_02, Product_03, Product_04, Product_05, Product_06, Product_07, Product_08 } from '../../../imagepath';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import { Button } from '@material-ui/core';
 
 class Billboards extends Component {
+  constructor(){
+    super();
+    this.state={
+      price: null,
+      productPrice: 1050
+    }
+  }
   render() {
     return (
       <div className="page-wrapper">
@@ -20,13 +28,20 @@ class Billboards extends Component {
               <div className="col">
                 <h3 className="page-title">Billboards</h3>
                 <ul className="breadcrumb">
+                  <div className="crumb">
                   <li className="breadcrumb-item"><a href="/app/index">Dashboard</a></li>
                   <li className="breadcrumb-item active">Billboards</li>
+                  </div>
+                 
+                  <div>
+    <Button href="/app/ecommerce/summary"  variant="contained" color="primary" style={{margin:"10px", color:"white"}} >CONTINUE ${`${this.state.price?this.state.price:0}`} </Button>
+                  </div>
                 </ul>
               </div>
             </div>
             <div className="header2">
               <span style={{fontWeight:"bold"}}>18 Results</span> 
+             
               <form >
   <label for="billboards"style={{fontWeight:"bold"}}>Sort by:</label>
   <select id="billboards" name="billboards">
@@ -67,13 +82,13 @@ class Billboards extends Component {
 {/* button group */}
 
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary" className="bt-1" id="1">-</button>
-                      <button type="button" class="btn btn-primary" className="bt-2" id="2">+</button>
+                      <button type="button" class="btn btn-primary" className="bt-1" id="1" onClick={(prevPrice)=>{prevPrice=this.state.price-(this.state.productPrice?this.state.productPrice:0); this.setState({...this.state, price: prevPrice })}}>-</button>
+                      <button type="button" class="btn btn-primary" className="bt-2" id="2" onClick={(prevPrice)=>{prevPrice=this.state.price+(this.state.productPrice?this.state.productPrice:0); this.setState({...this.state, price: prevPrice })}}>+</button>
                     </div>
                   </div>
                   <hr class="solid"></hr>
                   <div className="billFooter">
-                    <h5>$333,000 Month     </h5>
+                    <h5>$1,050 Month     </h5>
 
                     <h5> <LocationOnIcon/> Aba,Abia</h5>
                   </div>
@@ -115,7 +130,7 @@ class Billboards extends Component {
                   </div>
                   <hr class="solid"></hr>
                   <div className="billFooter">
-                    <h5>$333,000 Month     </h5>
+                    <h5>$1,050 Month     </h5>
 
                     <h5><LocationOnIcon/> Aba,Abia</h5>
                   </div>
@@ -156,7 +171,7 @@ class Billboards extends Component {
                   </div>
                   <hr class="solid"></hr>
                   <div className="billFooter">
-                    <h5>$333,000 Month     </h5>
+                    <h5>$1,050 Month     </h5>
 
                     <h5><LocationOnIcon/> Aba,Abia</h5>
                   </div>
@@ -197,7 +212,7 @@ class Billboards extends Component {
                   </div>
                   <hr class="solid"></hr>
                   <div className="billFooter">
-                    <h5>$333,000 Month     </h5>
+                    <h5>$1,050 Month     </h5>
 
                     <h5><LocationOnIcon/> Aba,Abia</h5>
                   </div>
