@@ -1,4 +1,62 @@
-.product {
+hr.solid{
+    border-top: 3px solid #e7e7e7;
+    width: 100%;;
+    
+
+}
+.MuiTableCell-root{border-bottom: none !important; } 
+span.s1{
+    width: 50%;
+    height: 100%;
+    border-radius: 80px ;
+    background-color: purple;
+    padding: 5px;
+    color: white;
+  }
+
+  span.allSpan{
+    width: 50%;
+    height: 100%;
+    border-radius: 80px ;
+    background-color: blue;
+    padding: 5px;
+    color: white;
+  }
+  span.sFashion{
+    width: 50%;
+    height: 100%;
+    border-radius: 80px ;
+    background-color: green;
+    padding: 5px;
+    color: white;
+  }
+
+  .container{
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7);
+  }
+
+
+/* .container{
+    display: flex;
+    background-color: white;
+    height: 70vh;
+    width: 60vw;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7);
+    margin-top: 20%;
+    
+    justify-content: center; 
+}
+.center {
+    width: 50px;
+    margin-top: 20%;
+  }
+hr.solid {
+    border-top: 2px solid #e7e7e7;
+  } */
+
+
+
+/* .product {
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
@@ -16,4 +74,4 @@
 .product-inner img {
 	width: 100%;
 	height: auto;
-}
+} */ 

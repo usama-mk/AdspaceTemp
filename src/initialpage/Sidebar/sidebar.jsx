@@ -25,6 +25,7 @@ class Sidebar extends Component {
               <a href="#"><i className="fe fe-cart" /> <span> Media Planning</span> <span className="menu-arrow" /></a>
               <ul style={{display: 'none'}}>
               <li><a className={pathname.includes('products') ?"active" :""} href="/app/ecommerce/billboards">Billboards</a></li>
+              <li><a className={pathname.includes('products') ?"active" :""} href="/app/ecommerce/branding">Branding</a></li>
                 <li><a className={pathname.includes('products') ?"active" :""} href="/app/ecommerce/products">Products</a></li>
                 <li><a className={pathname.includes('uct-details') ?"active" :""} href="/app/ecommerce/product-details">Product View</a></li>
                 <li><a className={pathname.includes('orders') ?"active" :""} href="/app/ecommerce/orders">Orders</a></li>
