@@ -6,6 +6,7 @@ import { withRouter } from 'react-router-dom';
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css';
 import RefreshIcon from '@material-ui/icons/Refresh';
+import $ from 'jquery'
 import FormatColorResetIcon from '@material-ui/icons/FormatColorReset';
 import './sidebar.css'
 import { data } from 'jquery';
@@ -47,7 +48,7 @@ class Sidebar extends Component {
                 <IconButton size="small">
                 <span>  <RefreshIcon fontSize="small" /> refresh</span>
                 </IconButton>
-                <IconButton size="small">
+                <IconButton size="small" onClick={()=>{ $('input[type=checkbox]').prop('checked', false); this.setState({selectedDate:null, check:false})}}>
                 <span> <FormatColorResetIcon fontSize="small"/> reset</span>
                 </IconButton>
                  

@@ -49,7 +49,7 @@ class summary extends Component {
          
 
           <CollapsibleTable/>
-         
+          <input style={{margin:"20px"}}  type="text" value="" placeholder="Brand Name..." /> 
         </div>
       </div>
     );
