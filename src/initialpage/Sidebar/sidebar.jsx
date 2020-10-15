@@ -9,13 +9,14 @@ import RefreshIcon from '@material-ui/icons/Refresh';
 import FormatColorResetIcon from '@material-ui/icons/FormatColorReset';
 import './sidebar.css'
 import { data } from 'jquery';
-import { IconButton } from '@material-ui/core';
+import { Box, Collapse, IconButton } from '@material-ui/core';
 
 class Sidebar extends Component {
   constructor(){
     super();
     this.state={
-      selectedDate: null
+      selectedDate: null,
+      check:false
     }
 
   }
@@ -58,9 +59,15 @@ class Sidebar extends Component {
               <div>
   <span style={{color:"#e75480", padding:"5px"}}>Stats</span> <br/>
   <label >
-    <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Abia</label><br/>
+    <input type="checkbox" class="radio" value="Abia" name="fooby[1][]" onClick={(check)=>{check= this.state.check; this.setState({...this.state, check: !check})}} /> Abia</label><br/>
+ 
+  <Collapse in={this.state.check} timeout="auto" unmountOnExit> 
+  <Box margin={1} padding={0.2}>
   <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> aba</label><br/>
+  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> aba</label><br/>
+     </Box>
+  </Collapse>
+   
   <label>
     <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Abuja</label><br/>
     <label>
