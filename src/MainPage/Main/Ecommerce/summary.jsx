@@ -49,7 +49,23 @@ class summary extends Component {
          
 
           <CollapsibleTable/>
-          <input style={{margin:"20px"}}  type="text" value="" placeholder="Brand Name..." /> 
+          <input className="i" style={{margin:"20px" }}  type="text" value="" placeholder="CAMPAIGN / PRODUCT TITLE" /> <br/>
+          <div className="foot"> 
+          <div className="start">
+          <Button variant="contained" color="primary" >Export your plan</Button> <span>  </span>
+          <Button variant="contained" color="primary">Save this plan</Button>
+          </div>
+          <div className="mid">
+          <Button variant="contained" color="primary" disabled>Pay $15,223 with paystack</Button>
+          </div>
+
+          <div className="end">
+          <Button style={{marginBottom:"5px"}} variant="contained" color="primary" >Pay with cheque/bank transfer</Button> <br/>
+          <Button variant="contained" color="primary" >Back</Button>
+          </div>
+          
+          </div>
+         
         </div>
       </div>
     );

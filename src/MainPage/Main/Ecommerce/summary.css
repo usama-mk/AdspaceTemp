@@ -2,3 +2,15 @@ div.ex1 {
     display: flex;
     overflow: scroll;
   }
+input.i{
+    width: 300px;
+    background: 
+        linear-gradient(#696969, #696969) center bottom 2px /calc(100% - 10px) 1px no-repeat;
+    background-color: #fcfcfc;
+    border: none;
+    padding: 10px;
+  }
+div.foot{
+    display: flex;
+    justify-content: space-between;
+}
