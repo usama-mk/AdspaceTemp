@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Helmet } from "react-helmet";
 import './billboards.css'
 import { Product_01, Product_02, Product_03, Product_04, Product_05, Product_06, Product_07, Product_08 } from '../../../imagepath';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 class Billboards extends Component {
   render() {
@@ -23,6 +24,19 @@ class Billboards extends Component {
                   <li className="breadcrumb-item active">Billboards</li>
                 </ul>
               </div>
+            </div>
+            <div className="header2">
+              <span style={{fontWeight:"bold"}}>18 Results</span> 
+              <form >
+  <label for="billboards"style={{fontWeight:"bold"}}>Sort by:</label>
+  <select id="billboards" name="billboards">
+    <option value="Default">Default</option>
+    <option value="Recents">Recents</option>
+    <option value="Most views">Most views</option>
+    <option value="Latest">Latest</option>
+  </select>
+  <input type="submit"name="▼" />
+</form>
             </div>
           </div>
           {/* /Page Header */}
@@ -61,7 +75,7 @@ class Billboards extends Component {
                   <div className="billFooter">
                     <h5>$333,000 Month     </h5>
 
-                    <h5>Aba,Abia</h5>
+                    <h5> <LocationOnIcon/> Aba,Abia</h5>
                   </div>
 
                 </div>
@@ -103,7 +117,7 @@ class Billboards extends Component {
                   <div className="billFooter">
                     <h5>$333,000 Month     </h5>
 
-                    <h5>Aba,Abia</h5>
+                    <h5><LocationOnIcon/> Aba,Abia</h5>
                   </div>
 
                 </div>
@@ -144,7 +158,7 @@ class Billboards extends Component {
                   <div className="billFooter">
                     <h5>$333,000 Month     </h5>
 
-                    <h5>Aba,Abia</h5>
+                    <h5><LocationOnIcon/> Aba,Abia</h5>
                   </div>
 
                 </div>
@@ -185,7 +199,7 @@ class Billboards extends Component {
                   <div className="billFooter">
                     <h5>$333,000 Month     </h5>
 
-                    <h5>Aba,Abia</h5>
+                    <h5><LocationOnIcon/> Aba,Abia</h5>
                   </div>
 
                 </div>

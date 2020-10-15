@@ -1,0 +1,13 @@
+div.re{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+div.dropdownCheckbox{
+    overflow:scroll;
+     
+}
+.sidebar{
+    overflow:scroll;
+     
+}

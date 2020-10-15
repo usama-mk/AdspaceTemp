@@ -1,10 +1,27 @@
 /**
  * App Header
  */
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { withRouter } from 'react-router-dom';
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css';
+import RefreshIcon from '@material-ui/icons/Refresh';
+import FormatColorResetIcon from '@material-ui/icons/FormatColorReset';
+import './sidebar.css'
+import { data } from 'jquery';
+import { IconButton } from '@material-ui/core';
 
 class Sidebar extends Component {
+  constructor(){
+    super();
+    this.state={
+      selectedDate: null
+    }
+
+  }
+  
+
+
    render() {
     
    
@@ -23,7 +40,50 @@ class Sidebar extends Component {
             </li>
             <li className="submenu">
               <a href="#"><i className="fe fe-cart" /> <span> Media Planning</span> <span className="menu-arrow" /></a>
+              
               <ul style={{display: 'none'}}>
+              <div className="re">
+                <IconButton size="small">
+                <span>  <RefreshIcon fontSize="small" /> refresh</span>
+                </IconButton>
+                <IconButton size="small">
+                <span> <FormatColorResetIcon fontSize="small"/> reset</span>
+                </IconButton>
+                 
+              </div>
+              <div  style={{padding:"3px", background:"black" ,borderRadius: "7px"}}>
+                <DatePicker  showYearDropdown scrollableMonthYearDropdown isClearable  placeholderText="Select Date" selected={this.state.selectedDate} onChange={date=>this.setState({selectedDate:date}) } />
+                 </div>
+              <div className="dropdownCheckbox" style={{height:"400px"}}>
+              <div>
+  <span style={{color:"#e75480", padding:"5px"}}>Stats</span> <br/>
+  <label >
+    <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Abia</label><br/>
+  <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> aba</label><br/>
+  <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Abuja</label><br/>
+    <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Bayelsa</label><br/>
+    <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Delta</label><br/>
+     
+</div>
+<div>
+  <span style={{color:"#e75480", padding:"5px"}}>Adtypes</span> <br/>
+  <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[2][]" /> Billboard</label><br/>
+  <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[2][]" /> Cinema</label><br/>
+  <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[2][]" /> Exhibition</label><br/>
+    <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[2][]" /> Lamppost</label><br/>
+    <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[2][]" /> LED Billboard</label><br/>
+</div>
+              </div>
+
               <li><a className={pathname.includes('products') ?"active" :""} href="/app/ecommerce/billboards">Billboards</a></li>
               <li><a className={pathname.includes('products') ?"active" :""} href="/app/ecommerce/branding">Branding</a></li>
                 <li><a className={pathname.includes('products') ?"active" :""} href="/app/ecommerce/products">Products</a></li>
